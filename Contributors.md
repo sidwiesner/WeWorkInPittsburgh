@@ -1,14 +1,5 @@
-WeWorkInPhilly Contributors
+WeWorkInPittsburgh Contributors
 ===========================
 
-* **[Alex Hillman](http://twitter.com/alexknowshtml)**
+* **[Sid Wiesner](http://twitter.com/sidwiesner)**
 
-* **[Linus Graybill](http://twitter.com/graybill)**
-
-* **[Chris Cera](http://twitter.com/chriscera)**
-
-* **[Brad Oyler](http://twitter.com/bradoyler)**
-
-* **[Andrew Scott](http://twitter.com/apscott43)**
-
-* **[Matt Monihan](https://twitter.com/mattmonihan)**

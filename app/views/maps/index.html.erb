@@ -20,7 +20,7 @@ function initialize() {
     var mapStyles = [
          { featureType: "road", elementType: "geometry", stylers: [{ hue: "#8800ff" }, { lightness: 100}] }, {
            featureType: "road", stylers: [{ visibility: "on" }, { hue: "#91ff00" }, { saturation: -62 }, { gamma: 1.98 }, { lightness: 45}]}, {
-           featureType: "water", stylers: [{ hue: "#005eff" }, { gamma: 0.72 }, { lightness: 42}]}, { 
+           featureType: "water", stylers: [{ hue: "#005eff" }, { gamma: 0.72 }, { lightness: 42}]}, {
            featureType: "transit.line", stylers: [{ visibility: "on" }]}, {
            featureType: "administrative.locality", stylers: [ { visibility: "on" }]}, {
            featureType: "administrative.neighborhood", elementType: "geometry",stylers: [{ visibility: "simplified" }]}, {
@@ -62,17 +62,17 @@ function initialize() {
             iw = new google.maps.InfoWindow();
             for (var i = 0; i < locations.length; i++) {
                 var location = locations[i].company;
-                addMarker(location);          
+                addMarker(location);
             }
         });
     }
 }
 </script>
 
-<h1>Companies in Greater Philadelphia</h1>
+<h1>Companies in Greater Pittsburgh</h1>
 
 <p>
-<a href="/companies/new">Add your company</a> to include it on this map!  
+<a href="/companies/new">Add your company</a> to include it on this map!
 There are currently <%=@companies.length.to_s %> companies registered with valid street addresses.
 </p>
 

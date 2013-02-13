@@ -36,7 +36,7 @@
         var mapStyles = [
              { featureType: "road", elementType: "geometry", stylers: [{ hue: "#8800ff" }, { lightness: 100}] }, {
                featureType: "road", stylers: [{ visibility: "on" }, { hue: "#91ff00" }, { saturation: -62 }, { gamma: 1.98 }, { lightness: 45}]}, {
-               featureType: "water", stylers: [{ hue: "#005eff" }, { gamma: 0.72 }, { lightness: 42}]}, { 
+               featureType: "water", stylers: [{ hue: "#005eff" }, { gamma: 0.72 }, { lightness: 42}]}, {
                featureType: "transit.line", stylers: [{ visibility: "on" }]}, {
                featureType: "administrative.locality", stylers: [ { visibility: "on" }]}, {
                featureType: "administrative.neighborhood", elementType: "geometry",stylers: [{ visibility: "simplified" }]}, {
@@ -78,7 +78,7 @@
                 iw = new google.maps.InfoWindow();
                 for (var i = 0; i < locations.length; i++) {
                     var location = locations[i].company;
-                    addMarker(location);          
+                    addMarker(location);
                 }
             });
         }
@@ -98,7 +98,7 @@
     </script>
 
     <div style=" text-align:center; margin:auto;" id="legend">
-        <!--a href="http://weworkinphilly.com/">Visit WeWorkInPhilly</a-->
+        <!--a href="http://weworkinpittsburgh.com/">Visit WeWorkInPittsburgh</a-->
         <ul style="font-size: x-small; list-style: horizontal; list-style: none;">
             <li style="display: inline;">
                 <input id="GroupH" type="checkbox" value="company" checked="checked" />

@@ -21,13 +21,13 @@ common:
   hoptoad: seekrit!
   secret_token: "<%= ENV['APP_SECRET'] %>"
   organization:
-    name: WeWorkInPhilly
-    city: Philadelphia
+    name: WeWorkInPgh
+    city: Pittsburgh
     state: PA
-    url: http://weworkinphilly.org
-    twitter: weWorkInPhilly
-    email: alex@indyhall.org
+    url: http://weworkinpittsburgh.com
+    twitter: WeWorkInPittsburgh
+    email: sid.wiesner@gmail.com
     host: Heroku
     host_url: http://heroku.com
-    logotype: <span>we</span>WorkInPhilly
+    logotype: <span>We</span>WorkInPgh
   search: sql

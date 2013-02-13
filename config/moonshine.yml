@@ -20,7 +20,7 @@
 # Directory where application is deployed to
 :deploy_to: /var/www/sites/epdx.org
 
-# Primary domain application will be accessed as 
+# Primary domain application will be accessed as
 :domain: epdx.org
 
 # Domain aliases for application. One common use of this is for asset hosts.
@@ -32,7 +32,7 @@
 # If you change this value, you will need to run: cap vcs:install
 #:scm: git
 # Reposistory URI for checking out code at deploy time
-:repository: git@github.com:reidab/citizenry.git
+:repository: git@github.com:sidwiesner/WeWorkInPittsburgh.git
 
 # Use :app_symlinks to setup directories under public/ that you want to persist
 # across deployments. They'll be symlinked to the shared directory.
@@ -63,14 +63,14 @@
 
 # Passenger-specific options. Refer to the following templates for details
 # about what values are used:
-# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/passenger.conf.erb 
-# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/passenger.vhost.erb 
+# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/passenger.conf.erb
+# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/passenger.vhost.erb
 :passenger:
   :max_pool_size: 3
 
 # MySQL-specific options. Refer to the following templates for details about
 # what values are used:
-# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/moonshine.cnf.erb 
+# - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/moonshine.cnf.erb
 :mysql:
   :innodb_buffer_pool_size: 128M
 
