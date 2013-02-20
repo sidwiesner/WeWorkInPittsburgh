@@ -12,6 +12,6 @@ namespace :deploy do
     sh "git push git@heroku.com:cold-fog-145.git master"
     sh "heroku rake db:migrate --app cold-fog-145"
     # sh "heroku restart --app cold-fog-145"
-    sh "open http://www.weworkinphilly.com"
+    sh "open http://www.weworkinpgh.com"
   end
 end

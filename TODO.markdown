@@ -3,8 +3,6 @@ TODO
 
 Initial Setup
 -------------
-* fix header logo overlap
-* fix 404 text and picture
 * get S3 integration working
 * get LinkedIn and Twitter logins working
 * get map links working
@@ -14,3 +12,4 @@ Initial Setup
 * create install file
 * finish update to readme
 * submit changes to github
+* add maps to individual company pages

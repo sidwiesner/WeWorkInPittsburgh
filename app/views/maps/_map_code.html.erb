@@ -1,29 +1,29 @@
 <script type="text/javascript">
 
 	function initialize() {
-		var myLatlng = new google.maps.LatLng(39.955741,-75.176289);
+		var myLatlng = new google.maps.LatLng(40.440627,-79.995875);
 		var myOptions = {
 			zoom: 10
 			,center: myLatlng
 			,mapTypeId: google.maps.MapTypeId.ROADMAP
 		}
 		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-		
+
 		var markers = [];
 		var infowindows = [];
-		
+
 		<% if ! companies.nil? %>
 			<% companies.each_with_index do |company, index| %>
-			
+
 			<% if company.geocode_or_return %>
 				markers['mark<%= index %>'] = new google.maps.Marker({
 					position: new google.maps.LatLng(<%= company.latitude %>, <%= company.longitude %>)
 					,map: map
 				});
-					
+
 				infowindows['mark<%= index %>'] = new google.maps.InfoWindow({
 					content: "<h2>" + '<%= escape_javascript(company.name) %>' + "</h2><p>" + '<%= escape_javascript(company.address) %>' + "</p>"
-				}); 
+				});
 
 				google.maps.event.addListener(markers['mark<%= index %>'], 'click', function() {
 				  infowindows['mark<%= index %>'].open(map, markers['mark<%= index %>']);
@@ -31,17 +31,17 @@
 
 			<% end %>
 		<% end %>
-		
+
 <% end %>
-		
+
 	}
-	
+
 	function loadScript() {
 		var script = document.createElement("script");
 		script.type = "text/javascript";
 		script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
 		document.body.appendChild(script);
-	
+
 	};
 
 </script>

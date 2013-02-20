@@ -17,16 +17,16 @@ common:
     github:
       key: "<%= ENV['GITHUB_KEY'] %>"
       secret: "<%= ENV['GITHUB_SECRET'] %>"
-  google_analytics_id: <your id>
+  google_analytics_id: "<%= ENV['ANALYTICS_ID'] %>"
   hoptoad: seekrit!
   secret_token: "<%= ENV['APP_SECRET'] %>"
   organization:
     name: WeWorkInPgh
     city: Pittsburgh
     state: PA
-    url: http://weworkinpittsburgh.com
-    twitter: WeWorkInPittsburgh
-    email: sid.wiesner@gmail.com
+    url: http://weworkinpgh.com
+    twitter: weworkinpgh
+    email: weworkinpgh@gmail.com
     host: Heroku
     host_url: http://heroku.com
     logotype: <span>We</span>WorkInPgh

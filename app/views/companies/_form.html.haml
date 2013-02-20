@@ -5,59 +5,36 @@
     = f.input :name
     = f.input :url, :label => 'Website'
     = f.input :jobs_url, :label => 'Jobs Page URL'
-    = f.input :address, :as => :string, :hint => "e.g. 20 N 3rd St, Philadelphia PA, 19106"
+    = f.input :address, :as => :string, :hint => "e.g. 122 Meyran Ave, Pittsburgh, PA 15213"
     = f.input :description
     = f.input :tag_list, :as => :text, :label => 'Tags (industries, topics, etc)', :hint => "Comma separated, please", :input_html => {:class => 'tags'}
 
     = f.label 'Categories'
     = f.check_box :is_company
     Company
-    %img(src="/images/maps/company.png")
-    ||
+    %br/
     = f.check_box :is_startup
     Startup
-    %img(src="/images/maps/startup.png")
-    ||
+    %br/
     = f.check_box :is_accelerator
     Accelerator
-    %img(src="/images/maps/accelerator.png")
-    ||
+    %br/
     = f.check_box :is_organization
     Organization
-    %img(src="/images/maps/organization.png")
-    ||
+    %br/
     = f.check_box :is_coworking
     Coworking
-    %img(src="/images/maps/coworking.png")
-    ||
+    %br/
     = f.check_box :is_investor
     Investor
-    %img(src="/images/maps/investor.png")
-    ||
+    %br/
     = f.check_box :is_service
     Service
-    %img(src="/images/maps/service.png")
+    %br/
+
+
 
     = f.input :technology_list, :as => :text, :label => 'Technologies used (languages, frameworks, etc)', :hint => "Comma separated, please", :input_html => {:class => 'tags'}
-
-    %table{:border => "1"}
-      %tbody
-        %tr
-          %td
-            = f.input :customer1, :as => :string, :label => 'Customer 1'
-          %td
-            = f.input :customer_url1, :as => :string, :label => 'Customer 1 Website (optional)'
-        %tr
-          %td
-            = f.input :customer2, :as => :string, :label => 'Customer 2'
-          %td
-            = f.input :customer_url2, :as => :string, :label => 'Customer 2 Website (optional)'
-        %tr
-          %td
-            = f.input :customer3, :as => :string, :label => 'Customer 3'
-          %td
-            = f.input :customer_url3, :as => :string, :label => 'Customer 3 Website (optional)'
-    %br/
 
     = f.label 'Number of Employees'
     = select(:company, :number_of_employees, @number_of_employees_options)
